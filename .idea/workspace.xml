@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22f49683-efad-4396-922f-ffcce8b8e886" name="Default Changelist" comment="" />
+    <list default="true" id="22f49683-efad-4396-922f-ffcce8b8e886" name="Default Changelist" comment="initial set up">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/hoffelijk.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/Assets/Assignment.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Implementation/FileImporter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Command/ImportFileCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Command/ImportFileCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +38,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -36,10 +55,21 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/public/Assets" />
       <recent name="$PROJECT_DIR$/docker/nginx" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/docker/php" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -49,22 +79,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601398407812</updated>
-      <workItem from="1601398409664" duration="5345000" />
+      <workItem from="1601398409664" duration="11457000" />
     </task>
+    <task id="LOCAL-00001" summary="initial set up">
+      <created>1601410648571</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601410648571</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial set up" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial set up" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1058" y="371" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601399062131">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="1058" y="371" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1792.1097@0.23.1792.1097" timestamp="1601399062131" />
-    <state x="1060" y="288" key="NewPhpClassDialog" timestamp="1601409489366">
+    <state x="1094" y="445" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1" timestamp="1601415919372">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="1060" y="288" key="NewPhpClassDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1601409489366" />
+    <state x="1094" y="445" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1/0.23.1792.1097@0.23.1792.1097" timestamp="1601415919372" />
+    <state x="1060" y="288" key="NewPhpClassDialog" timestamp="1601412133603">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="1060" y="288" key="NewPhpClassDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1601412133603" />
     <state x="1163" y="498" key="NewPhpFileDialog" timestamp="1601409454266">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
@@ -73,9 +119,13 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="397" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1601410216874" />
-    <state x="1140" y="488" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601410384366">
+    <state x="944" y="307" key="Vcs.Push.Dialog.v2" timestamp="1601410655545">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="1140" y="488" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1097@0.23.1792.1097" timestamp="1601410384366" />
+    <state x="944" y="307" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1601410655545" />
+    <state x="1140" y="488" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601416691557">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="1140" y="488" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1097@0.23.1792.1097" timestamp="1601416691557" />
   </component>
 </project>
