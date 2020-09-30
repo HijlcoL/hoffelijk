@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="22f49683-efad-4396-922f-ffcce8b8e886" name="Default Changelist" comment="ignore file from git">
-      <change afterPath="$PROJECT_DIR$/app/src/Implementation/GradeCalculator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Implementation/QuestionScoreCalculator.php" afterDir="false" />
+    <list default="true" id="22f49683-efad-4396-922f-ffcce8b8e886" name="Default Changelist" comment="Implement student passing calculation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Command/ImportFileCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Command/ImportFileCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Implementation/FileImporter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Implementation/FileImporter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Implementation/QuestionScoreCalculator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Implementation/QuestionScoreCalculator.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601398407812</updated>
-      <workItem from="1601398409664" duration="17217000" />
+      <workItem from="1601398409664" duration="19102000" />
     </task>
     <task id="LOCAL-00001" summary="initial set up">
       <created>1601410648571</created>
@@ -91,18 +106,37 @@
       <option name="project" value="LOCAL" />
       <updated>1601416958364</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implement student passing calculation">
+      <created>1601466335671</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601466335671</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="initial set up" />
     <MESSAGE value="Implement PhpSpreadsheet bundle&#10;Implement Import command" />
     <MESSAGE value="ignore file from git" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignore file from git" />
+    <MESSAGE value="Implement student passing calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement student passing calculation" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -131,10 +165,10 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="397" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1601410216874" />
-    <state x="944" y="307" key="Vcs.Push.Dialog.v2" timestamp="1601416966613">
+    <state x="944" y="307" key="Vcs.Push.Dialog.v2" timestamp="1601466341629">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="944" y="307" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1601416966613" />
+    <state x="944" y="307" key="Vcs.Push.Dialog.v2/0.23.1792.1097@0.23.1792.1097" timestamp="1601466341629" />
     <state x="1140" y="488" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601416691557">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
