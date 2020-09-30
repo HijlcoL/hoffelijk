@@ -1,9 +1,8 @@
 <?php
 namespace App\Implementation;
 
-use PhpOffice\PhpSpreadsheet\Reader\BaseReader;
 use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 use Yectep\PhpSpreadsheetBundle\Factory;
 
 class FileImporter
@@ -24,18 +23,15 @@ class FileImporter
         $this->spreadsheet = $spreadsheet;
     }
 
-    public function import(string $filename): array
+    /**
+     * @param string $filename
+     * @return Worksheet
+     */
+    public function import(string $filename): Worksheet
     {
         /** @var Xlsx $xlsxReader */
         $xlsxReader = $this->spreadsheet->createReader('Xlsx');
-        $file = $xlsxReader->load($filename);
 
-        dump($file);
-        die();
-
-        return [
-            'students' => [],
-            'questions' => []
-            ];
+        return $xlsxReader->load($filename)->getActiveSheet();
     }
 }

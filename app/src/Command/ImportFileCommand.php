@@ -3,6 +3,8 @@ namespace App\Command;
 
 
 use App\Implementation\FileImporter;
+use App\Implementation\GradeCalculator;
+use App\Implementation\QuestionScoreCalculator;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
@@ -17,18 +19,32 @@ class ImportFileCommand extends Command
      * @var FileImporter
      */
     private $fileImporter;
+    /**
+     * @var GradeCalculator
+     */
+    private $gradeCalculator;
+    /**
+     * @var QuestionScoreCalculator
+     */
+    private $questionScoreCalculator;
 
     /**
      * ImportFileCommand constructor.
      * @param FileImporter $fileImporter
+     * @param GradeCalculator $gradeCalculator
+     * @param QuestionScoreCalculator $questionScoreCalculator
      */
     public function __construct(
-        FileImporter $fileImporter
+        FileImporter $fileImporter,
+        GradeCalculator $gradeCalculator,
+        QuestionScoreCalculator $questionScoreCalculator
     )
     {
         Parent::__construct();
 
         $this->fileImporter = $fileImporter;
+        $this->gradeCalculator = $gradeCalculator;
+        $this->questionScoreCalculator = $questionScoreCalculator;
     }
 
     protected function configure()
@@ -47,22 +63,25 @@ class ImportFileCommand extends Command
         // empty line for clarity
         $output->writeln('');
 
-        $result = $this->fileImporter->import($filename);
+        $file = $this->fileImporter->import($filename);
+
+        $studentResults = $this->gradeCalculator->calculateGrade($file);
+        $questionResults = $this->questionScoreCalculator->calculateQuestionScores($file);
 
         $passedMask = "|%15.15s |%7.7s |\n";
         printf($passedMask, 'ID', 'Passed');
-        foreach ($result['students'] as $student){
-            printf($passedMask, 'Student 0012', 'Yes');
+        foreach ($studentResults as $student => $passed) {
+            printf($passedMask, $student, $passed ? 'Yes' : 'No');
         }
 
         // empty line for clarity
         $output->writeln('');
 
-        $questionMask = "|%15.15s |%10.10s |%10.10s |\n";
-        printf($questionMask, 'Question nr.', 'P-value', 'RIT-value');
-        foreach ($result['questions'] as $student){
-            printf($questionMask, '12', '0.5', '-1');
-        }
+//        $questionMask = "|%15.15s |%10.10s |%10.10s |\n";
+//        printf($questionMask, 'Question nr.', 'P-value', 'RIT-value');
+//        foreach ($result['questions'] as $student){
+//            printf($questionMask, '12', '0.5', '-1');
+//        }
 
 
         return Command::SUCCESS;
